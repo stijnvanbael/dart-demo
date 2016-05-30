@@ -1,0 +1,7 @@
+# Files and directories created by pub
+.idea
+.packages
+.pub/
+dart-demo.iml
+packages
+pubspec.lock # (Remove this pattern if you wish to check in your lock file)

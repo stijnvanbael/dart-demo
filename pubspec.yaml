@@ -1,0 +1,5 @@
+name: dart_demo
+version: 0.0.1
+description: A simple console application.
+dependencies:
+  reflective: any
