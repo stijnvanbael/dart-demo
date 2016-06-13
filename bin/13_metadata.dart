@@ -9,7 +9,7 @@ abstract class Validator {
 }
 
 class NotNull extends Validator {
-  const NotNull();
+  const NotNull(this.a);
 
   @override
   bool validate(Object o, String fieldName) {
@@ -38,7 +38,7 @@ class Person {
   @notNull
   int id;
 
-  @notNull
+  @NotNull('a')
   String name;
 
   Person({this.id, this.name});

@@ -1,8 +1,10 @@
 abstract class Person {
+  String name = 'a';
   void doWork();
 }
 
 abstract class WritesCode {
+  String name = 'b';
   doWork() {
     print('Writing code...');
   }
@@ -14,7 +16,11 @@ abstract class Sings {
   }
 }
 
-class Developer extends Person with WritesCode {
+class Developer extends Object with Person, WritesCode {
+  doWork() {
+    super.doWork();
+    print(name);
+  }
 }
 
 class Singer extends Person with Sings {

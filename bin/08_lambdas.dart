@@ -23,7 +23,10 @@ class SaleLine {
 main() {
   Sale sale = new Sale();
 
-  sale..add('Lipton Ice Tea 1L', 2)..add('Coca Cola 1L', 3)..add('Spa Rood 1L', 4);
+  sale
+    ..add('Lipton Ice Tea 1L', 2)
+    ..add('Coca Cola 1L', 3)
+    ..add('Spa Rood 1L', 4);
 
-  print('Total quantity: ${sale.totalQuantity}');
+  print('Total quantity: ${sale.totalQuantity()}');
 }

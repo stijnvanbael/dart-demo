@@ -8,8 +8,10 @@ main() {
   helloFromA2();
   helloFromA3();
 
-  helloFromB();
   helloFromB1();
-  helloFromB2();
   helloFromB3();
+
+  _privateHelloFromA1();
+  helloFromB();
+  helloFromB2();
 }

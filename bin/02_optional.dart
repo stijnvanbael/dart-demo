@@ -3,7 +3,9 @@
 
 main() {
   var x = 1;
+  var y = '1';
   print('x = $x');
+  print(x == y);
   print('x is an int: ${x is int}');
   print('x is a String: ${x is String}');
 
